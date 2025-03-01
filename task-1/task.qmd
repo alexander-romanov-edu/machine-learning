@@ -1,0 +1,20 @@
+---
+title: Test
+---
+```{python}
+import sklearn as sk
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+import seaborn as sns
+from sklearn import datasets, linear_model, metrics, preprocessing, model_selection, svm
+from statsmodels.stats.outliers_influence import variance_inflation_factor as vif
+from scipy.spatial import distance
+```
+```{python}
+target_url = ("https://archive.ics.uci.edu/ml/machine-learning-databases/"
+              "spambase/spambase.data")
+spam = pd.read_csv(target_url, header=None)
+spam
+```
+
